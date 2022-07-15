@@ -1,0 +1,205 @@
+ * {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+ }
+ html {
+  font-size: 90%;
+ }
+
+body {
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   background-color: #828DA9;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   margin: 0;
+   padding: 0;
+ }
+
+ .heading {
+    text-align: center;
+    margin-top: 1rem;
+    color: #191C25;
+ }
+
+ .selector {
+    position: absolute;
+    top: 2rem;
+    left: 1.5rem;
+    padding: 0.25rem;
+    font-size: 1rem;
+ }
+
+
+ .container {
+   width: 350px;
+   margin-top: 2rem;
+  }
+  
+
+  .balance {
+    font-size: 2.4rem;
+    color: #fff0f0;
+  }
+
+
+ 
+/* Income Expense */
+
+ .income_expense {
+   display: flex;
+   text-align: center;
+   margin-top: 1.5%;
+   text-transform: uppercase;
+  }
+  
+
+.income{
+    border-radius: 5px 0 0 5px;
+    border: 1px solid rgb(99, 99, 99);
+    border-color: rgb(99, 99, 99);
+    background-color: #E2E4EB;
+    padding: 2% 10%;
+    flex: 1;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+ }
+
+.expense{
+    border-radius: 0 5px 5px 0;
+    border: 1px solid rgb(99, 99, 99);
+    border-left: 0;
+    background-color: #E2E4EB;
+    flex: 1;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .income_expense .income p {
+   color: #009345;
+   font-size: 1.2rem;
+ }
+ .income_expense .expense p {
+   color: #cb0000;
+   font-size: 1.2rem;
+ }
+
+ .history {
+   margin-top: 5%;
+   font-size: 1.1rem;
+   margin-bottom: 2%;
+ }
+
+ .history h3 {
+  border-bottom: 1px solid #191C25;
+  padding-bottom: 0.75rem;
+  margin-bottom: 0.75rem;
+  color: #191C25;
+ }
+
+ .history ul {
+   list-style: none;
+  }
+  
+  .history ul li {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 1.5rem 0.75rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0px 5px 6px -4px rgba(0,0,0,0.75);
+ }
+
+/* Add Transactions */
+#add-transaction h3 {
+  border-bottom: 1px solid #191C25;
+  padding-bottom: 0.75rem;
+  margin-bottom: 0.75rem;
+  color: #191C25;
+}
+
+label {
+  display: block;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+ input[type='text'],
+ input[type='number'] {
+   background-color: #FEFEFE;
+   border-radius: 2px;
+   display: block;
+   font-size: 16px;
+   padding: 10px;
+   width: 100%;
+   margin-top: 0.5rem;
+   border-radius: 0.25rem;
+   border: 2px solid rgb(96, 96, 96);
+ }
+
+ .btn {
+  margin-top: 0.5rem;
+  width: 100%;
+  padding: 0.6rem 0;
+  font-size: 1.2rem;
+  border: none;
+  background-color: #191C25;
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+ }
+
+ .btn:hover {
+  cursor: pointer;
+ }
+ 
+
+ .deletebtn {
+  background-color: rgb(200, 34, 34);
+  padding: 0.30rem 0.5rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  visibility: hidden;
+ }
+
+ .listItem:hover .deletebtn {
+  visibility: visible;
+ }
+
+
+ .transactionListContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 0 1.5rem 0 0.5rem;
+ }
+
+ /* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #303646;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
